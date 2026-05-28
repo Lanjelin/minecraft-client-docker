@@ -1,16 +1,18 @@
 services:
   minecraft-client:
     image: ghcr.io/lanjelin/minecraft-client-docker:latest
-    container_name: Minecraft-Client
+    container_name: minecraft-client
     devices:
       - /dev/dri:/dev/dri
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Oslo
+      - DRINODE=/dev/dri/renderD128
+      - DRI_NODE=/dev/dri/renderD128
+      - AUTO_GPU=true
       - CUSTOM_USER=JohnDoe # optional, but recommended if exposing to -
       - PASSWORD=a-safe-pw # the internet without any other form of authentication
-      - DRINODE=/dev/dri/renderD128
     ports:
       - "3000:3000" #http
       - "3001:3001" #https

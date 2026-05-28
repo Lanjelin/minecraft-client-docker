@@ -20,7 +20,7 @@ Some snippets to get you started.
 services:
   minecraft-client:
     image: ghcr.io/lanjelin/minecraft-client-docker:latest
-    container_name: openaudible
+    container_name: minecraft-client
     devices:
       - /dev/dri:/dev/dri
     environment:
