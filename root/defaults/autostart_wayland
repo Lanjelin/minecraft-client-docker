@@ -1,0 +1,4 @@
+#!/bin/bash
+# Delete possibly residual LOCK-file that prevents start
+find "$HOME/.minecraft/webcache2" -type f -name 'LOCK' -print0 | xargs -0 -r rm -- 2>/dev/null >/dev/null
+minecraft-launcher

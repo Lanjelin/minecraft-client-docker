@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<menu id="root-menu" label="MENU">
+    <item label="xterm" icon="/usr/share/icons/hicolor/scalable/apps/xterm-color.svg"><action name="Execute"><command>/usr/bin/xterm</command></action></item>
+    <item label="Minecraft" icon="/usr/share/icons/hicolor/symbolic/apps/minecraft-launcher.svg"><action name="Execute"><command>minecraft-launcher</command></action></item>
+</menu>
+</openbox_menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu id="root-menu" label="MENU">
+  <item label="foot" icon="foot">
+    <action name="Execute">
+      <command>/usr/bin/foot</command>
+    </action>
+  </item>
+  <item label="Minecraft" icon="minecraft-launcher">
+    <action name="Execute">
+      <command>minecraft-launcher</command>
+    </action>
+  </item>
+</menu>
